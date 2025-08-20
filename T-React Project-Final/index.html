@@ -24,10 +24,25 @@
                     <a href="#" class="nav__link">Login</a></li>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
                 </div>
-                <button class="btn" onclick="openMenu()"></button>
+                <button class="btn__menu" onclick="openMenu()">
+                    <img src="./assets/bars-solid-full (1).svg" class="bars">
+                </button>
             </div>
         </nav>
-        <div class="menu"></div>
+        <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <img src="./assets/x-solid-full.svg" class="x">
+            </button>
+            <div class="menu__links">
+                <a href="#Quality" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#Features" class="menu__link" onclick="closeMenu()">Features</a>
+                <a href="#Pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#Values" class="menu__link" onclick="closeMenu()">Value Added</a>
+                <a href="#Steps" class="menu__link" onclick="closeMenu()">Getting Started</a>
+                <a href="#Start" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+            
+            </div>
+        </div>
         <header>
             <div class="container">
                 <div class="row header__row">
