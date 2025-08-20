@@ -17,17 +17,33 @@
                             <div class="nav__logo--title">Treact</div>
                 </div>
                 <div class="nav__links">
-                    <a href="#" class="nav__link">About</a></li>
-                    <a href="#" class="nav__link">Blog</a></li>
-                    <a href="#" class="nav__link">Pricing</a></li>
-                    <a href="#" class="nav__link">Contact Us</a></li>
-                    <a href="#" class="nav__link">Login</a></li>
+                    <a href="#" class="nav__link link__hover-effect">About
+                    </a></li>
+                    <a href="#" class="nav__link link__hover-effect">Blog</a></li>
+                    <a href="#" class="nav__link link__hover-effect">Pricing</a></li>
+                    <a href="#" class="nav__link link__hover-effect">Contact Us</a></li>
+                    <a href="#" class="nav__link link__hover-effect">Login</a></li>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
                 </div>
-                <button class="btn" onclick="openMenu()"></button>
+                <button class="btn__menu" onclick="openMenu()">
+                    <img src="./assets/bars-solid-full (1).svg" class="bars">
+                </button>
             </div>
         </nav>
-        <div class="menu"></div>
+        <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <img src="./assets/x-solid-full.svg" class="x">
+            </button>
+            <div class="menu__links">
+                <a href="#Quality" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#Features" class="menu__link" onclick="closeMenu()">Features</a>
+                <a href="#Pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#Values" class="menu__link" onclick="closeMenu()">Value Added</a>
+                <a href="#Steps" class="menu__link" onclick="closeMenu()">Getting Started</a>
+                <a href="#Start" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+            
+            </div>
+        </div>
         <header>
             <div class="container">
                 <div class="row header__row">
@@ -35,7 +51,7 @@
                         <h1>Beautiful React Templates
                             <span class="purple">for you.</span>
                         </h1>
-                        <p class="header__description--para">Our templates are easy to set up, understand and customize. Fully modular components with a variety of pages and components.</p>
+                        <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                         <div class="header__email">
                             <input type="text" class="sign-up"
                                 placeholder="Your E-Mail Address"/>
@@ -46,7 +62,7 @@
                         class="templates__logo">
                         </div>
                         <figure class="about__img--wrapper">
-                            <img src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+                            <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
                             class="about__img">
                         </figure>
                     </div>
@@ -145,7 +161,7 @@
                 <div class="quality__description">
                     <p class="section__tag">QUALITY WORK</p>
                     <h2 class="section__title">Designed & Developed by <span class="purple">Professionals.</span></h2>
-                    <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum alias exercitationem distinctio explicabo quod, vero minus deserunt molestiae eum?</p>
+                    <p class="section__para para__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum alias exercitationem distinctio explicabo quod, vero minus deserunt molestiae eum?</p>
                     <button class="quality__btn">Learn More</button>
                 </div>
                 <figure class="quality__img--wrapper">
@@ -200,7 +216,7 @@
                         <h2 class="section__title">We Always Abide by our
                             <span class="purple">Principles.</span>
                         </h2>
-                        <div class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam mollitia distinctio voluptates facere error labore optio asperiores suscipit repellendus quod repellat rem voluptas magni accusantium incidunt tempora, unde soluta harum vitae odit nesciunt reiciendis eveniet?</div>
+                        <div class="section__para para__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam mollitia distinctio voluptates facere error labore optio asperiores suscipit repellendus quod repellat rem voluptas magni accusantium incidunt tempora, unde soluta harum vitae odit nesciunt reiciendis eveniet?</div>
                         <div class="values__list">
                             <div class="value">
                                 <div class="value__title">
@@ -303,11 +319,17 @@
                 <div class="testimonials__description">
                     <div class="section__tag">TESTIMONIALS</div> 
                     <h2 class="section__title">Our Clients <span class="purple">Love Us.</span></h2>
-                    <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum alias exercitationem distinctio explicabo quod, vero minus deserunt molestiae eum?</p>
+                    <p class="section__para para__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum alias exercitationem distinctio explicabo quod, vero minus deserunt molestiae eum?</p>
                     <div class="testimonial">
-                        <div class="testimonial__rating"></div>
+                        <div class="testimonial__rating">
+                            <img src="./assets/star-solid-full (1).svg" class="star">
+                            <img src="./assets/star-solid-full (1).svg" class="star">
+                            <img src="./assets/star-solid-full (1).svg" class="star">
+                            <img src="./assets/star-solid-full (1).svg" class="star">
+                            <img src="./assets/star-solid-full (1).svg" class="star">
+                        </div>
                         <h3 class="testimonial__title">Amazing User Experience</h3>
-                        <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, velit aspernatur. At tempora culpa similique debitis vitae voluptates asperiores placeat, eaque repellat quia esse ipsa corrupti accusantium consequuntur deleniti voluptas tenetur porro dolor blanditiis? Illum alias fuga nulla ipsum amet, aperiam neque minima accusantium magni maiores id sed obcaecati, mollitia officia voluptate consequuntur placeat fugit aliquam porro quos? Omnis, iusto.</p>
+                        <p class="testimonial__para para__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, velit aspernatur. At tempora culpa similique debitis vitae voluptates asperiores placeat, eaque repellat quia esse ipsa corrupti accusantium consequuntur deleniti voluptas tenetur porro dolor blanditiis? Illum alias fuga nulla ipsum amet, aperiam neque minima accusantium magni maiores id sed obcaecati, mollitia officia voluptate consequuntur placeat fugit aliquam porro quos? Omnis, iusto.</p>
                         <div class="testimonial__bottom">
                             <div class="testimonial__profile">
                                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80" class="testimonial__img">
@@ -317,9 +339,13 @@
                                 </div>
                             </div>
                             <div class="testimonial__buttons">
+                            <div class="testimonial__button">
+                                <img src="./assets/arrow-left-solid-full.svg" class="arrow">        
                             </div>
                             <div class="divider"></div>
-                            <div class="testimonial__buttons">
+                            <div class="testimonial__button">
+                                <img src="./assets/arrow-right-solid-full.svg" class="arrow">
+                            </div>
                            </div>
                         </div>
                     </div>
@@ -336,7 +362,7 @@
                     <div class="start__title">Developers all over the world are happily using Treact.</div>
                     <div class="start__buttons">
                         <button class="start__button">Get Started</button>
-                        <button class="start__button">Contact Us</button>
+                        <button class="start__button start__button--hover-effect">Contact Us</button>
                     </div>
                   </div>
                 </div>
@@ -345,61 +371,66 @@
         </Section>
     </main>
     <footer id="Footer">
-        <div class="container">
-            <div class="row">
-                <div class="links">
-                    <div class="link">
-                        <h5>MAIN</h5>
-                        <p class="link--para">Blog</p>
-                        <p class="link--para">FAQs</p>
-                        <p class="link--para">Support</p>
-                        <p class="link--para">About Us</p>
+        <div class="row">
+                <div class="footer__columns">
+                    <div class="footer__column">
+                        <div class="footer__column--title">MAIN</div>
+                        <a class="footer__column--link">Blog</a>
+                        <a class="footer__column--link">FAQs</a>
+                        <a class="footer__column--link">Support</a>
+                        <a class="footer__column--link">About Us</a>
                     </div>
-                    <div class="link">
-                        <h5>PRODUCT</h5>
-                        <p class="link--para">Log In</p>
-                        <p class="link--para">Personal</p>
-                        <p class="link--para">Business</p>
-                        <p class="link--para">Team</p>
+                    <div class="footer__column">
+                        <div class="footer__column--title">PRODUCT</div>
+                        <a class="footer__column--link">Log In</a>
+                        <a class="footer__column--link">Personal</a>
+                        <a class="footer__column--link">Business</a>
+                        <a class="footer__column--link">Team</a>
                     </div>
-                    <div class="link">
-                        <h5>PRESS</h5>
-                        <p class="link--para">Logos</p>
-                        <p class="link--para">Events</p>
-                        <p class="link--para">Stories</p>
-                        <p class="link--para">Office</p>
+                    <div class="footer__column">
+                        <div class="footer__column--title">PRESS</div>
+                        <a class="footer__column--link">Logos</a>
+                        <a class="footer__column--link">Events</a>
+                        <a class="footer__column--link">Stories</a>
+                        <a class="footer__column--link">Office</a>
                     </div>
-                    <div class="link">
-                        <h5>TEAM</h5>
-                        <p class="link--para">Career</p>
-                        <p class="link--para">Founders</p>
-                        <p class="link--para">Culture</p>
-                        <p class="link--para">Onboarding</p>
+                    <div class="footer__column">
+                        <div class="footer__column--title">TEAM</div>
+                        <a class="footer__column--link">Career</a>
+                        <a class="footer__column--link">Founders</a>
+                        <a class="footer__column--link">Culture</a>
+                        <a class="footer__column--link">Onboarding</a>
                     </div>
-                    <div class="link">
-                        <h5>LEGAL</h5>
-                        <p class="link--para">GDPR</p>
-                        <p class="link--para">Privacy Policy</p>
-                        <p class="link--para">Terms of Service</p>
-                        <p class="link--para">Disclaimer</p>
+                    <div class="footer__column">
+                        <div class="footer__column--title">LEGAL</div>
+                        <a class="footer__column--link">GDPR</a>
+                        <a class="footer__column--link">Privacy Policy</a>
+                        <a class="footer__column--link">Terms of Service</a>
+                        <a class="footer__column--link">Disclaimer</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer__info">
-                    <div class="nav__logo">
+                <div class="footer__divider">
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__logo">
                         <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" 
-                        class="nav__logo--img" alt="">
-                        <h4>Treact Inc.</h4>
+                        class="footer__logo--img" alt="">
+                        <h5 class="footer__logo--text">Treact Inc.</h5>
                     </div>
-                    <p class="footer--cr">2018 Treact Inc. All Rights Reserved.</p>
-                    <ul class="nav__links">
-                        <li>*FB*</li>
-                        <li>In*</li>
-                        <li>YT*</li>
-                    </ul>
+                    <div class="footer__copyright">2018 Treact Inc. All Rights Reserved.</div>
+                    <div class="footer__socials">
+                      <a class="footer__social--link">
+                        <img src="./assets/facebook-f-brands-solid-full.svg" class="footer__social--img">
+                      </a>
+                      <a class="footer__social--link">
+                        <img src="./assets/twitter-brands-solid-full.svg" class="footer__social--img">
+                      </a>
+                      <a class="footer__social--link">
+                        <img src="./assets/youtube-brands-solid-full.svg" class="footer__social--img">
+                      </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
   </body>
 </html>
