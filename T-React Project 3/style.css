@@ -744,10 +744,13 @@ h2{
 .testimonial{
     margin-top:40px;
 }
+.testimonial__rating{
+    display: flex;
+}
 
 .star{
     font-weight: 900;
-    background: rgb(246, 173, 85); 
+    stroke: rgb(246, 173, 85); 
     height: 1.25rem;
     width: 1.25rem;
 }
