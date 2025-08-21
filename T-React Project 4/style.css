@@ -807,7 +807,7 @@ h2{
     transition: all 300ms ease;
 }
 
-.fa-arrow-left .fa-arrow-right{
+.fa-arrow-left, .fa-arrow-right{
     color: rgb(100, 21, 255);
 }
 
